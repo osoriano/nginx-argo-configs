@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
       - name: nginx
-        image: osoriano/nginx-cicd-argo:85fa25580f175ed6495e61e33ab2eaaf046aafc9
+        image: osoriano/nginx-cicd-argo:09dd58ecfa445c9048d7d2012296c16f9d0304cf
         ports:
         - name: traffic-port
           containerPort: 80
