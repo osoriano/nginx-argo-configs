@@ -3,6 +3,9 @@ kind: Deployment
 metadata:
   name: nginx-dev
   namespace: nginx-cicd-argo
+  labels:
+    app.kubernetes.io/instance: nginx-dev
+    app.kubernetes.io/version: 09dd58ecfa445c9048d7d2012296c16f9d0304cf
 spec:
   replicas: 1
   selector:

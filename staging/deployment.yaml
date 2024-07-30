@@ -3,6 +3,9 @@ kind: Deployment
 metadata:
   name: nginx-staging
   namespace: nginx-cicd-argo
+  labels:
+    app.kubernetes.io/instance: nginx-staging
+    app.kubernetes.io/version: 47e6e3d98e328c543e10ab54fc384133ab72800a
 spec:
   replicas: 1
   selector:
