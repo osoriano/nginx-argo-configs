@@ -5,7 +5,7 @@ metadata:
   namespace: nginx-cicd-argo
   labels:
     app.kubernetes.io/instance: nginx-staging
-    app.kubernetes.io/version: 861a01336c5975ae59253b624be90db8adbd9f46
+    app.kubernetes.io/version: d44d5814d632b0780c9a8ddc3e52380feeb0f45a
 spec:
   replicas: 1
   selector:
@@ -18,7 +18,7 @@ spec:
     spec:
       containers:
       - name: nginx
-        image: osoriano/nginx-cicd-argo:861a01336c5975ae59253b624be90db8adbd9f46
+        image: osoriano/nginx-cicd-argo:d44d5814d632b0780c9a8ddc3e52380feeb0f45a
         ports:
         - name: traffic-port
           containerPort: 80
